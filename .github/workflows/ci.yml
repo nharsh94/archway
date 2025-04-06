@@ -1,0 +1,21 @@
+name: CI
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Check for broken links
+              uses: guarav-nelson/github-action-markdown-link-check@v1
+              with:
+                use-quiet-mode: 'yes'
+                folder-path: './docs'

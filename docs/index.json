@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Circuit Breaker",
+        "slug": "circuit-breaker",
+        "category": "resilience",
+        "tags": ["fallback", "timeout", "microservices"]
+    }
+]

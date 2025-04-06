@@ -1,0 +1,6 @@
+graph TD
+    A[Client] --> B[Service Proxy]
+    B -->|Healthy| C[Backend Service]
+    B -->|Tripped| D[Fallback Suspense]
+    C --> E[Success/Failure]
+    E --> B 
