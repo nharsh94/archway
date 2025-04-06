@@ -4,8 +4,8 @@ const config = {
   tagline: 'Solution Architecture Patterns and Blueprints',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  url: 'https://nharsh94.github.io',
+  baseUrl: '/archway/', // Adjusted to point to the GitHub Pages path
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
