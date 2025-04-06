@@ -1,3 +1,8 @@
+---
+id: circuit-breaker
+title: Circuit Breaker
+---
+
 # Circuit Breaker
 
 ## Summary
@@ -15,7 +20,14 @@ Repeated retries on a failing downstream service increase load and latency for u
 Use a circuit breaker to track failures and "trip" the breaker when failures cross a threshold. During this time, short-circuit requests or return fallback responses.
 
 ## Diagram
-![Circuit Breaker](../../diagrams/mermaid/circuit-breaker.mmd)
+```mermaid
+graph TD
+    A[Client] --> B[Service Proxy]
+    B -->|Healthy| C[Backend Service]
+    B -->|Tripped| D[Fallback Suspense]
+    C --> E[Success/Failure]
+    E --> B
+```
 
 ## Trade-offs
 - **Pros**: Improves fault isolation, prevents system collapse
