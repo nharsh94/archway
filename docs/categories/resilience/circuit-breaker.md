@@ -43,7 +43,7 @@ graph TD
 - Timeout
 
 ## Blueprint
-- [Terraform: Circuit Breaker Pattern](../../blueprints/terraform/circuit-breaker/main.tf)
+<!-- Dead link: ../../blueprints/terraform/circuit-breaker/main.tf -->
 
 ## References
 - [Martin Fowler on Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html)

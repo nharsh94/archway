@@ -38,8 +38,8 @@ flowchart TD
 - Stateless Services
 
 ## Blueprint
-[See Terraform Blueprint](../../blueprints/terraform/horizontal-scaling.tf)
+<!-- Dead link: ../../blueprints/terraform/horizontal-scaling.tf -->
 
 ## References
-- [AWS Scalability](https://aws.amazon.com/architecture/scalability/)
+<!-- Dead link: https://aws.amazon.com/architecture/scalability/ -->
 - [Google Cloud Load Balancing](https://cloud.google.com/load-balancing)
